@@ -1,0 +1,41 @@
+// Import Vars File
+@import "../../../Sass/Vars";
+
+// Start Navbar Style
+
+.main-navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    // Start Logo
+    .logo {
+        flex-grow: 1;
+    }
+
+    // Start Links
+    .links {
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                margin-right: 45px;
+                a {
+                    color: $font-color;
+                    font-size: 16pt;
+                    text-decoration: none;
+                    transition: color 300ms;
+                    &:hover {
+                        color: #5a6e7971;
+                    }
+                    &.active {
+                        color: $main-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

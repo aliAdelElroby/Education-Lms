@@ -1,0 +1,13 @@
+// Import Vars File
+@import "../../../Sass/Vars";
+
+// Start SubButton Style
+.sub-button {
+    padding: 12px 25px;
+    border: none;
+    background-color: white;
+    color: $main-color;
+    font-size: 16pt;
+    border-radius: 30px;
+    box-shadow: 0 0 8px -6px black;
+}
