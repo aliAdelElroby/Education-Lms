@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Education-Lms/static/css/main.33e5e952.chunk.css",
+    "main.js": "/Education-Lms/static/js/main.3ff4650d.chunk.js",
+    "main.js.map": "/Education-Lms/static/js/main.3ff4650d.chunk.js.map",
+    "runtime-main.js": "/Education-Lms/static/js/runtime-main.01013232.js",
+    "runtime-main.js.map": "/Education-Lms/static/js/runtime-main.01013232.js.map",
+    "static/css/2.ae9e5f60.chunk.css": "/Education-Lms/static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.b4365f4f.chunk.js": "/Education-Lms/static/js/2.b4365f4f.chunk.js",
+    "static/js/2.b4365f4f.chunk.js.map": "/Education-Lms/static/js/2.b4365f4f.chunk.js.map",
+    "index.html": "/Education-Lms/index.html",
+    "static/css/2.ae9e5f60.chunk.css.map": "/Education-Lms/static/css/2.ae9e5f60.chunk.css.map",
+    "static/css/main.33e5e952.chunk.css.map": "/Education-Lms/static/css/main.33e5e952.chunk.css.map",
+    "static/js/2.b4365f4f.chunk.js.LICENSE.txt": "/Education-Lms/static/js/2.b4365f4f.chunk.js.LICENSE.txt",
+    "static/media/Logo.1cdd792c.svg": "/Education-Lms/static/media/Logo.1cdd792c.svg",
+    "static/media/Logo.6de7e2c1.svg": "/Education-Lms/static/media/Logo.6de7e2c1.svg",
+    "static/media/bg-shape.1ae7224b.svg": "/Education-Lms/static/media/bg-shape.1ae7224b.svg",
+    "static/media/bg-shape.a17a1dd0.svg": "/Education-Lms/static/media/bg-shape.a17a1dd0.svg",
+    "static/media/bg-shape2.2fe7ddcf.svg": "/Education-Lms/static/media/bg-shape2.2fe7ddcf.svg",
+    "static/media/img.b3f820a5.png": "/Education-Lms/static/media/img.b3f820a5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01013232.js",
+    "static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.b4365f4f.chunk.js",
+    "static/css/main.33e5e952.chunk.css",
+    "static/js/main.3ff4650d.chunk.js"
+  ]
+}
