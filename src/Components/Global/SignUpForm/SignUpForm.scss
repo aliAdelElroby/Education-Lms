@@ -1,0 +1,85 @@
+// Import Vars File
+@import "../../../Sass/Vars";
+// Start Styling Form
+.sign-up-form {
+    min-width: 450px;
+    min-height: 563px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 42px;
+    box-shadow: 0 0 10px -5px rgb(109, 109, 109);
+    * {
+        position: relative;
+        z-index: 2;
+    }
+    .bg-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(45%, -40%);
+        z-index: 1;
+        img {
+            width: 700px;
+        }
+    }
+    .headline {
+        font-size: 24pt;
+        color: $font-color;
+        letter-spacing: 6px;
+        text-align: center;
+    }
+    .form {
+        margin-top: 30px;
+    }
+    .submit {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .call {
+            padding: 0 20px;
+            color: #5a6e79;
+            font-size: 13pt;
+            font-weight: 500;
+        }
+    }
+    .login {
+        margin-top: 50px;
+        a {
+            color: #87959c;
+            font-size: 13pt;
+            font-weight: 500;
+        }
+    }
+}
+
+// ==============Responsive
+
+// == == == == Tablet
+@media (max-width: 991.98px) {
+    .sign-up-form {
+        min-width: 80%;
+    }
+}
+// == == == == Mobile
+@media (max-width: 767.98px) {
+    .sign-up-form {
+        min-width: 100%;
+        padding: 42px 30px;
+        .submit {
+            flex-direction: column;
+            .call {
+                margin-top: 50px;
+                text-align: center;
+                br {
+                    display: none;
+                }
+            }
+        }
+        .login {
+            text-align: center;
+        }
+    }
+}

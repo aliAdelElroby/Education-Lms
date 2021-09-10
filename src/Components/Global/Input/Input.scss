@@ -1,0 +1,76 @@
+// Import Vars File
+@import "../../../Sass/Vars";
+
+// Styling Input
+.input {
+    padding-top: 30px;
+    margin-bottom: 15px;
+    .input-container {
+        height: 40px;
+        position: relative;
+        label {
+            color: #5a6e79;
+            font-size: 14pt;
+            font-weight: 500;
+            position: absolute;
+            bottom: 30%;
+            left: 0;
+            transition: bottom 300ms;
+        }
+        label.active {
+            bottom: 100%;
+        }
+        .input-field {
+            height: 100%;
+            border-bottom: 2px solid #d7e4ed;
+            position: relative;
+            &::before,
+            &::after {
+                content: "";
+                width: 0;
+                height: 2px;
+                position: absolute;
+                bottom: -2px;
+                left: 50%;
+                background-color: #8abde0;
+                transition: width 600ms cubic-bezier(0.86, 0.26, 0.82, 0.42);
+                will-change: width;
+            }
+            &::before {
+                transform: translate(-100%, 0);
+            }
+            input {
+                height: 100%;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: $font-color;
+                font-size: 13pt;
+            }
+            .password-only {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+                cursor: pointer;
+                i {
+                    font-size: 17pt;
+                    color: #d7e4ed;
+                    transition: color 300ms;
+                }
+            }
+            .password-only.active {
+                i {
+                    color: #8abde0;
+                }
+            }
+        }
+        .input-field.active {
+            &::before,
+            &::after {
+                width: 50%;
+            }
+        }
+    }
+}

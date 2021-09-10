@@ -1,0 +1,26 @@
+// Start Styling Counter
+.counter {
+    min-height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20pt;
+    font-weight: lighter;
+    text-align: center;
+    span {
+        font-size: 40pt;
+        font-weight: bold;
+    }
+}
+
+// ==============Responsive
+
+// == == == == Tablet
+@media (max-width: 991.98px) {
+    .counter {
+        margin-bottom: 50px;
+    }
+}
+// == == == == Mobile
+@media (max-width: 767.98px) {
+}

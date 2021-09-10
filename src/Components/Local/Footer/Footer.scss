@@ -1,0 +1,91 @@
+// Import Vars File
+@import "../../../Sass/Vars";
+
+// Start Styling Footer
+.main-footer {
+    padding-top: 70px;
+    background-color: #252c3a;
+
+    // One
+    .one {
+        margin-top: -10px;
+        .desc {
+            color: #666666cb;
+            margin-top: 20px;
+        }
+    }
+    // Four
+    .four {
+        .desc {
+            margin-top: 40px;
+            color: #666666cb;
+        }
+        .gethelp {
+            height: 40px;
+            margin-top: 20px;
+            form {
+                height: 100%;
+                display: flex;
+                input {
+                    padding: 5px 15px;
+                    width: 100%;
+                }
+                button {
+                    min-width: max-content;
+                    color: white;
+                    padding: 10px;
+                    background-color: $main-color;
+                    border: none;
+                }
+            }
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-top: 35px;
+        li {
+            color: #666666cb;
+            margin-bottom: 30px;
+        }
+    }
+    .headline {
+        color: white;
+        font-weight: 500;
+    }
+    // Copyright
+    .copyright {
+        height: 60px;
+        margin-top: 70px;
+        background-color: #1d232e;
+        border-top: 1px solid rgba(196, 196, 196, 0.466);
+        display: flex;
+        align-items: center;
+        .content {
+            .name {
+                color: #666666cb;
+            }
+        }
+    }
+}
+
+// ==============Responsive
+
+// == == == == Tablet
+@media (max-width: 991.98px) {
+    .main-footer {
+        .three,
+        .four {
+            margin-top: 30px;
+        }
+    }
+}
+// == == == == Mobile
+@media (max-width: 767.98px) {
+    .main-footer {
+        .two {
+            margin-top: 30px;
+        }
+    }
+}

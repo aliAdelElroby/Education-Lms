@@ -2,4 +2,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+}
+h2 {
+    font-size: 35pt;
+    font-weight: bold;
+    color: $main-color;
+}
+
+p {
+    font-size: 16pt;
+    color: #5a6e79;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+body.no-scroll {
+    height: 100vh;
+    overflow: hidden;
 }

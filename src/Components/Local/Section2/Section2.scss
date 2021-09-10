@@ -1,0 +1,61 @@
+// Start Styling Section 2
+.section2 {
+    padding: 100px 0 200px 0;
+    // Start Styling Items
+    .items {
+        margin-bottom: 100px;
+    }
+
+    // Start Styling Content
+    .content {
+        position: relative;
+        //Bg Shape
+        .bg-shape {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(-64%, -20%);
+            z-index: -1;
+        }
+        // Video
+        .video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        // Text
+        .content-text {
+            p {
+                margin-top: 30px;
+            }
+
+            // Start Styling Statistics
+            .statistics {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// ==============Responsive
+
+// == == == == Tablet
+@media (max-width: 991.98px) {
+}
+// == == == == Mobile
+@media (max-width: 767.98px) {
+    .section2 {
+        .content {
+            .bg-shape {
+                display: none;
+            }
+            .content-text {
+                padding-left: 5%;
+            }
+            .statistics {
+                margin-top: 100px;
+            }
+        }
+    }
+}

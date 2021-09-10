@@ -1,0 +1,68 @@
+// Import Vars File
+@import "../../../Sass/Vars";
+// Styling Section3
+.Section3 {
+    min-height: 400px;
+    padding: 50px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .bg {
+        height: 400px;
+        max-height: 400px;
+        width: 100%;
+        background-color: #f1e3fc;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        z-index: -1;
+    }
+    // Content
+    .content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .text {
+            margin-left: 70px;
+            font-size: 16pt;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $font-color;
+            a {
+                color: #fb384d;
+                text-decoration: none;
+            }
+            h3 {
+                font-size: 30pt;
+                font-weight: bold;
+                text-transform: none;
+            }
+        }
+    }
+}
+
+// ==============Responsive
+
+// == == == == Tablet
+@media (max-width: 991.98px) {
+    .Section3 {
+        flex-direction: column;
+        background-color: #f1e3fc;
+        .content {
+            margin-bottom: 100px;
+            .text {
+                margin: 0 auto;
+                padding: 0 3%;
+                text-align: center;
+            }
+        }
+    }
+}
+// == == == == Mobile
+@media (max-width: 767.98px) {
+    .Section3 {
+    }
+}

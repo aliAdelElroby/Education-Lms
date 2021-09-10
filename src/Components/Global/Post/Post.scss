@@ -1,0 +1,69 @@
+// Import Vars File
+@import "../../../Sass/Vars";
+
+// Start Styling Post
+.post {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto 100px auto;
+    // Headline
+    .headline {
+        font-size: 30pt;
+        font-weight: bold;
+        color: #252c3a;
+        margin-bottom: 20px;
+    }
+    // Descrption
+    .desc {
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    // More
+    .more {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .tools {
+            display: flex;
+            .hearts,
+            .comments {
+                display: flex;
+                align-items: center;
+                margin-right: 30px;
+                i {
+                    color: #5a6e79;
+                    font-size: 16pt;
+                    margin-right: 10px;
+                    transition: color 200ms;
+                    cursor: pointer;
+                }
+            }
+            .hearts.active,
+            .comments.active {
+                i {
+                    color: $main-color;
+                }
+            }
+            .comments {
+                i {
+                    font-size: 15pt;
+                }
+            }
+        }
+    }
+}
+
+// ==============Responsive
+
+// == == == == Tablet
+@media (max-width: 991.98px) {
+    .post {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+// == == == == Mobile
+@media (max-width: 767.98px) {
+}

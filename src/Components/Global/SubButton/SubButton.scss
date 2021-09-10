@@ -3,11 +3,13 @@
 
 // Start SubButton Style
 .sub-button {
-    padding: 12px 25px;
+    min-width: max-content;
+    padding: 12px 30px;
     border: none;
     background-color: white;
     color: $main-color;
     font-size: 16pt;
     border-radius: 30px;
     box-shadow: 0 0 8px -6px black;
+    outline: none;
 }
