@@ -58,7 +58,7 @@ class Section2 extends Component {
                                     data-aos-offset="400"
                                 >
                                     <div className="video">
-                                        <VideoFrame video="/assets/video.mp4" />
+                                        <VideoFrame video="/Education-Lms/assets/video.mp4" />
                                     </div>
                                 </div>
                                 <div className="col-12 col-sm-12 col-md-12 col-lg-6">
