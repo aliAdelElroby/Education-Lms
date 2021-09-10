@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Education-Lms/static/css/main.33e5e952.chunk.css",
-    "main.js": "/Education-Lms/static/js/main.3ff4650d.chunk.js",
-    "main.js.map": "/Education-Lms/static/js/main.3ff4650d.chunk.js.map",
+    "main.js": "/Education-Lms/static/js/main.72436262.chunk.js",
+    "main.js.map": "/Education-Lms/static/js/main.72436262.chunk.js.map",
     "runtime-main.js": "/Education-Lms/static/js/runtime-main.01013232.js",
     "runtime-main.js.map": "/Education-Lms/static/js/runtime-main.01013232.js.map",
     "static/css/2.ae9e5f60.chunk.css": "/Education-Lms/static/css/2.ae9e5f60.chunk.css",
@@ -24,6 +24,6 @@
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.b4365f4f.chunk.js",
     "static/css/main.33e5e952.chunk.css",
-    "static/js/main.3ff4650d.chunk.js"
+    "static/js/main.72436262.chunk.js"
   ]
 }
