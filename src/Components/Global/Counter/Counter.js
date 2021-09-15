@@ -1,17 +1,21 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import "./Counter.scss";
 import CountUp from "react-countup";
 import $ from "jquery";
-class Counter extends Component {
+class Counter extends PureComponent {
     constructor(props) {
         super(props);
 
         this.state = {
             scrollTop: false,
         };
+        this.Counter = React.createRef();
+    }
+
+    componentDidMount() {
         // For Check Offset Top
         $(window).on("scroll", () => {
-            let counter = this._reactInternals.child.stateNode;
+            let counter = this.Counter.current;
             if (window.scrollY + 500 >= $(counter).offset().top) {
                 this.setState({
                     scrollTop: true,
@@ -25,7 +29,11 @@ class Counter extends Component {
         const { color, num, text } = this.props.data;
         return (
             <div className="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div className="counter" style={{ color: color }}>
+                <div
+                    className="counter"
+                    style={{ color: color }}
+                    ref={this.Counter}
+                >
                     <span>
                         <CountUp
                             end={this.state.scrollTop ? num : ""}

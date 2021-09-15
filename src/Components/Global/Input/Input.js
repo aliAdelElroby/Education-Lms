@@ -7,21 +7,20 @@ class Input extends Component {
         this.state = {
             Id: this.props.data.label.toLowerCase().split(" ").join("-"),
             type: this.props.data.type,
+            active: false,
         };
+        this.Input = React.createRef();
     }
-    focus(e) {
-        let inputField = $(e.currentTarget).parent(),
-            label = $(e.currentTarget).parent().siblings();
-        inputField.addClass("active");
-        label.addClass("active");
+    focus() {
+        this.setState({
+            active: true,
+        });
     }
-    blur(e) {
-        let input = $(e.currentTarget),
-            inputField = $(e.currentTarget).parent(),
-            label = $(e.currentTarget).parent().siblings();
-        if (input.val() === "") {
-            inputField.removeClass("active");
-            label.removeClass("active");
+    blur() {
+        if (this.Input.current.value === "") {
+            this.setState({
+                active: false,
+            });
         }
     }
     showPass(e) {
@@ -39,19 +38,24 @@ class Input extends Component {
         }
     }
     render() {
+        const Type = this.state.type ? this.state.type : "text",
+            Id = this.state.Id,
+            isActive = this.state.active ? "active" : false,
+            Name = this.props.data.name;
         return (
             <div className="input">
                 <div className="input-container">
-                    <label htmlFor={this.state.Id}>
+                    <label htmlFor={this.state.Id} className={isActive}>
                         {this.props.data.label}
                     </label>
-                    <div className="input-field">
+                    <div className={`input-field ${isActive}`}>
                         <input
+                            ref={this.Input}
                             onFocus={this.focus.bind(this)}
                             onBlur={this.blur.bind(this)}
-                            type={this.state.type ? this.state.type : "text"}
-                            id={this.state.Id}
-                            name={this.props.data.name}
+                            type={Type}
+                            id={Id}
+                            name={Name}
                         />
                         {this.props.data.type === "password" ? (
                             <div

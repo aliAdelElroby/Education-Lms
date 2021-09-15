@@ -1,42 +1,46 @@
 import React, { Component } from "react";
 import "./CheckBox.scss";
-import $ from "jquery";
-class CheckBox extends Component {
-    Checked(e) {
-        let CustomCheck = $(e.currentTarget),
-            input = $(e.currentTarget).siblings("input");
-        if (input.attr("checked")) {
-            input.attr("checked", false);
-            CustomCheck.removeClass("checked");
-        } else {
-            input.attr("checked", true);
-            CustomCheck.addClass("checked");
-        }
-    }
-    CheckedLabel(e) {
-        let CustomCheck = $(e.currentTarget).siblings(".checkbox-custom"),
-            input = $(e.currentTarget).siblings("input");
 
-        if (input.attr("checked")) {
-            input.attr("checked", false);
-            CustomCheck.removeClass("checked");
-        } else {
-            input.attr("checked", true);
-            CustomCheck.addClass("checked");
-        }
+class CheckBox extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            checked: false,
+        };
+
+        this.Checked = this.Checked.bind(this);
+    }
+
+    Checked() {
+        this.setState((prev) => {
+            return {
+                checked: !prev.checked,
+            };
+        });
     }
     render() {
         const { id, name } = this.props.data;
+        const isChecked = this.state.checked;
         return (
             <div className="check-box">
-                <input type="checkbox" id={id} name={name} />
+                <input
+                    type="checkbox"
+                    id={id}
+                    name={name}
+                    defaultChecked={isChecked}
+                />
                 <div
-                    className="checkbox-custom"
-                    onClick={this.Checked.bind(this)}
+                    className={
+                        this.state.checked
+                            ? "checkbox-custom checked"
+                            : "checkbox-custom"
+                    }
+                    onClick={this.Checked}
                 >
                     <i className="fas fa-check"></i>
                 </div>
-                <label htmlFor={id} onClick={this.CheckedLabel.bind(this)}>
+                <label htmlFor={id} onClick={this.Checked}>
                     I agree with the terms and conditions
                 </label>
             </div>
